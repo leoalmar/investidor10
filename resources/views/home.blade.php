@@ -13,7 +13,7 @@
                         <div class="card-body">
                             <h5 class="card-title">{{ $news->title }}</h5>
                             <p class="card-text">{{ $news->body }}</p>
-                            <a href="{{ route('news-show', ['newsId' => $news->id]) }}" class="btn btn-primary">Access</a>
+                            <a href="{{ route('news-show', ['newsId' => $news->id], false) }}" class="btn btn-primary">Access</a>
                         </div>
                     </div>
                 </div>

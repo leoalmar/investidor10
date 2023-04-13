@@ -5,7 +5,7 @@
 @section('content')
     <div class="container my-5">
         <h2>Create News Article</h2>
-        <form method="post" action="{{ route("news-store") }}">
+        <form method="post" action="{{ route("news-store", [], false) }}">
             @CSRF
             <div class="mb-3">
                 <label for="newsTitle" class="form-label">Title</label>

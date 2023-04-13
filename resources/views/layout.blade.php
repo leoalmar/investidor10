@@ -17,18 +17,18 @@
     <!-- Header -->
     <header class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <a class="navbar-brand" href="{{ route("home") }}">
+            <a class="navbar-brand" href="{{ route("home", [], false) }}">
                 <img src="https://via.placeholder.com/50x50" alt="Logo">
             </a>
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route("home") }}">Show news</a>
+                    <a class="nav-link" href="{{ route("home", [], false) }}">Show news</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route("news-create") }}">Add news</a>
+                    <a class="nav-link" href="{{ route("news-create", [], false) }}">Add news</a>
                 </li>
             </ul>
-            <form class="d-flex" method="get" action="{{ route("home") }}">
+            <form class="d-flex" method="get" action="{{ route("home", [], false) }}">
                 @CSRF
                 <input class="form-control me-2" id="q" name="q" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-success" type="submit">Search</button>
